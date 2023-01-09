@@ -16,9 +16,17 @@ function endSeven(number) {
   return getLastDigit(number) == 7;
 }
 
-function getFirstDigit(number) {}
+function getFirstDigit(num) {}
 
 //31
 function isTen(number) {
   return number == 10;
 }
+
+//2
+function threeDigits(number) {
+  digits = number.toString();
+  return digits.length == 3;
+}
+
+console.log();
