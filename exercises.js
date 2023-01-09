@@ -5,8 +5,7 @@ function negative(number) {
 
 //1
 function endFour(number) {
-  lastDigit = getLastDigit(number);
-  return lastDigit == 4;
+  return getLastDigit(number) == 4;
 }
 
 function getLastDigit(num) {
@@ -20,4 +19,4 @@ function isTen(number) {
   return number == 10;
 }
 
-console.log();
+console.log(endFour(54));
