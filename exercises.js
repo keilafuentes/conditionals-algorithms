@@ -3,9 +3,15 @@ function negative(number) {
   return number < 0;
 }
 
-function endFour(number) {}
+//1
+function endFour(number) {
+  lastDigit = getLastDigit(number);
+  return lastDigit == 4;
+}
 
-function getLastDigit(number) {}
+function getLastDigit(num) {
+  return num.toString().slice(-1);
+}
 
 function getFirstDigit(number) {}
 
@@ -13,3 +19,5 @@ function getFirstDigit(number) {}
 function isTen(number) {
   return number == 10;
 }
+
+console.log();
