@@ -74,3 +74,14 @@ function digitsEven(number) {
     console.log("Ambos digitos no son pares");
   }
 }
+
+//10
+function equalDigits(number) {
+  first = getFirstDigit(number);
+  second = getLastDigit(number);
+  if (first == second) {
+    console.log("Son iguales");
+  } else {
+    console.log("No son iguales");
+  }
+}
