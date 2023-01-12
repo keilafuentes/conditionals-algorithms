@@ -23,6 +23,16 @@ function isTen(number) {
 
 //2
 function threeDigits(number) {
-  digits = number.toString();
-  return digits.length == 3;
+  digits = number.toString().length;
+  return digits == 3;
 }
+
+//32
+
+//34
+function multipleSeven(number) {
+  result = number % 7;
+  return result == 0;
+}
+
+console.log(multipleSeven(7));
