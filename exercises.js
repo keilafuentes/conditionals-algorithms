@@ -1,22 +1,20 @@
+///GENERAL METHODS
+function getFirstDigit(num) {
+  return Number(String(num)[0]);
+}
+
+function getLastDigit(num) {}
+//////////////
+
 //3
 function negative(number) {
   return number < 0;
 }
 
 //1
-function endFour(number) {
-  return getLastDigit(number) == 4;
-}
+function endFour(number) {}
 
-function getLastDigit(num) {
-  return num.toString().slice(-1);
-}
-
-function endSeven(number) {
-  return getLastDigit(number) == 7;
-}
-
-function getFirstDigit(num) {}
+function endSeven(number) {}
 
 //31
 function isTen(number) {
@@ -28,5 +26,3 @@ function threeDigits(number) {
   digits = number.toString();
   return digits.length == 3;
 }
-
-console.log();
