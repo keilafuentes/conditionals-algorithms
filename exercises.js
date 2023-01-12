@@ -28,11 +28,7 @@ function threeDigits(number) {
 }
 
 //32
-
-//34
 function multipleSeven(number) {
   result = number % 7;
   return result == 0;
 }
-
-console.log(multipleSeven(7));
