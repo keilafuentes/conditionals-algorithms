@@ -20,14 +20,14 @@ function negative(number) {
 
 //1
 function endFour(number) {
-  endNumber = getLastDigit(number);
-  return endNumber == 4;
+  digit = getLastDigit(number);
+  return digit == 4;
 }
 
 //33
 function endSeven(number) {
-  endNumber = getLastDigit(number);
-  return endNumber == 7;
+  lastNumber = getLastDigit(number);
+  return lastNumber == 7;
 }
 
 //31
@@ -55,3 +55,12 @@ function lessThousand(number) {
     console.log("La cantidad de digitos es: " + total);
   }
 }
+
+function sumTwoDigits(number) {
+  first = getFirstDigit(number);
+  second = getLastDigit(number);
+  result = first + second;
+  return "La suma de ambos digitos es: " + result;
+}
+
+console.log(sumTwoDigits(85));
