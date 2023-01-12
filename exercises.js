@@ -56,6 +56,7 @@ function lessThousand(number) {
   }
 }
 
+//4
 function sumTwoDigits(number) {
   first = getFirstDigit(number);
   second = getLastDigit(number);
@@ -63,4 +64,13 @@ function sumTwoDigits(number) {
   return "La suma de ambos digitos es: " + result;
 }
 
-console.log(sumTwoDigits(85));
+//5
+function digitsEven(number) {
+  first = getFirstDigit(number);
+  second = getLastDigit(number);
+  if (first % 2 == 0 && second % 2 == 0) {
+    console.log("Ambos digitos son pares");
+  } else {
+    console.log("Ambos digitos no son pares");
+  }
+}
