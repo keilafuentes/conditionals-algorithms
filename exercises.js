@@ -85,3 +85,18 @@ function equalDigits(number) {
     console.log("No son iguales");
   }
 }
+
+//11
+function greaterDigit(number) {
+  first = getFirstDigit(number);
+  second = getLastDigit(number);
+  if (first > second) {
+    console.log("El primer digito es mayor que el segundo");
+  } else if (first == second) {
+    console.log("Ambos digitos son iguales");
+  } else {
+    console.log("El segundo digito es mayor que el primero");
+  }
+}
+
+console.log(greaterDigit(12));
