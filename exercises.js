@@ -8,7 +8,9 @@ function getTotalDigits(num) {
   return digits;
 }
 
-function getLastDigit(num) {}
+function getLastDigit(num) {
+  return num % 10;
+}
 //////////////
 
 //3
@@ -17,9 +19,16 @@ function negative(number) {
 }
 
 //1
-function endFour(number) {}
+function endFour(number) {
+  endNumber = getLastDigit(number);
+  return endNumber == 4;
+}
 
-function endSeven(number) {}
+//33
+function endSeven(number) {
+  endNumber = getLastDigit(number);
+  return endNumber == 7;
+}
 
 //31
 function isTen(number) {
@@ -46,5 +55,3 @@ function lessThousand(number) {
     console.log("La cantidad de digitos es: " + total);
   }
 }
-
-lessThousand(5067);
