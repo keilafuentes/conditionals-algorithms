@@ -100,10 +100,8 @@ function greaterDigit(number) {
 }
 
 //13
-function sumEven(number) {
-  first = getFirstDigit(number);
-  second = getLastDigit(number);
-  result = first + second;
+function sumEven(number, secondNumber) {
+  result = number + secondNumber;
   if (result % 2 == 0) {
     console.log("La suma es: " + result + " y es par");
   } else {
@@ -111,4 +109,4 @@ function sumEven(number) {
   }
 }
 
-console.log(sumEven(61));
+console.log(sumEven(61, 11));
