@@ -99,4 +99,16 @@ function greaterDigit(number) {
   }
 }
 
-console.log(greaterDigit(12));
+//13
+function sumEven(number) {
+  first = getFirstDigit(number);
+  second = getLastDigit(number);
+  result = first + second;
+  if (result % 2 == 0) {
+    console.log("La suma es: " + result + " y es par");
+  } else {
+    console.log("La suma es: " + result + " y no es par");
+  }
+}
+
+console.log(sumEven(61));
